@@ -1,7 +1,7 @@
 {
-  "name": "ts-package-template",
+  "name": "aipi",
   "version": "0.0.1",
-  "description": "DESCRIPTION",
+  "description": "Get info for an IP from any echoip instance",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
   "exports": {
@@ -17,7 +17,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/alrico88/REPO"
+    "url": "https://github.com/alrico88/aipi"
   },
   "sideEffects": false,
   "devDependencies": {
@@ -39,7 +39,9 @@
     "vitest": "^0.10.5"
   },
   "keywords": [
-    "KEYWORDS"
+    "echoip",
+    "geography",
+    "IP"
   ],
   "scripts": {
     "dev": "pnpm run build -- --watch src",
@@ -55,5 +57,8 @@
     "hooks": {
       "pre-commit": "pnpm run lint"
     }
+  },
+  "dependencies": {
+    "ofetch": "^1.0.0"
   }
 }
