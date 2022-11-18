@@ -1,6 +1,6 @@
 {
   "name": "aipi",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Get info for an IP from any echoip instance",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
