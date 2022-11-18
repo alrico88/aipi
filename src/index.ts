@@ -53,3 +53,7 @@ export class IPInfoFetcher {
     };
   }
 }
+
+export { UserAgent } from './interfaces/UserAgent';
+export { GeoInfo };
+export { IPInfo };

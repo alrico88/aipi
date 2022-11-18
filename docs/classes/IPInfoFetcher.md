@@ -47,7 +47,7 @@
 
 ### getGeo
 
-▸ **getGeo**(`ip?`): `Promise`<`GeoInfo`\>
+▸ **getGeo**(`ip?`): `Promise`<[`GeoInfo`](../interfaces/GeoInfo.md)\>
 
 #### Parameters
 
@@ -57,17 +57,17 @@
 
 #### Returns
 
-`Promise`<`GeoInfo`\>
+`Promise`<[`GeoInfo`](../interfaces/GeoInfo.md)\>
 
 #### Defined in
 
-[index.ts:41](https://github.com/alrico88/aipi/blob/master/src/index.ts#L41)
+[index.ts:43](https://github.com/alrico88/aipi/blob/master/src/index.ts#L43)
 
 ___
 
 ### getInfo
 
-▸ **getInfo**(`ip?`): `Promise`<`IPInfo`\>
+▸ **getInfo**(`ip?`): `Promise`<[`IPInfo`](../interfaces/IPInfo.md)\>
 
 #### Parameters
 
@@ -77,7 +77,7 @@ ___
 
 #### Returns
 
-`Promise`<`IPInfo`\>
+`Promise`<[`IPInfo`](../interfaces/IPInfo.md)\>
 
 #### Defined in
 
