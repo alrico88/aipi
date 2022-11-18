@@ -1,4 +1,4 @@
-import { ofetch } from 'ofetch';
+import axios from 'axios';
 import { GeoInfo } from './interfaces/GeoInfo';
 import { IPInfo } from './interfaces/IpInfo';
 
@@ -22,12 +22,14 @@ export class IPInfoFetcher {
    * @return {Promise<IPInfo>}
    * @memberof IPInfoFetcher
    */
-  public getInfo(ip?: string): Promise<IPInfo> {
-    return ofetch<IPInfo>(this.instanceUrl, {
-      query: {
+  public async getInfo(ip?: string): Promise<IPInfo> {
+    const { data } = await axios.get<IPInfo>(this.instanceUrl, {
+      params: {
         ip,
       },
     });
+
+    return data;
   }
 
   /**
